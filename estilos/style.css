@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Passion+One&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --font-02: 'Passion One', cursive;
+    --font-03: 'Pacifico', cursive;
+}
+
 
 *{
     margin: 0px;
@@ -9,17 +17,21 @@
 html, body{
     min-height: 100vh;
     background-color: lightgray;
+    font-family: var(--fonte01);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+
 }
 
 header > h1{
     padding-top:50px;
     font-variant: small-caps;
+    font-family: var(--font-02);
+    font-size: 4em;
 }
 
 header > p{
@@ -38,10 +50,12 @@ a:hover{
 }
 
 section{
+    font-family: var(--font-03);
     padding-top:10vh;
     padding-bottom:10vh ;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.1vw;
 }
 
 section.normal{
@@ -55,13 +69,16 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.192);
 }
 
 
 footer{
+    padding: 5px;
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 13px;
 }
